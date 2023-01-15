@@ -1,4 +1,7 @@
-package Transport;
+package Transport.CIvilVehicles;
+
+import Transport.CIvilVehicles.CivilVehicles;
+import Transport.CIvilVehicles.Suvable;
 
 public class SuvCar extends CivilVehicles implements Suvable {
 

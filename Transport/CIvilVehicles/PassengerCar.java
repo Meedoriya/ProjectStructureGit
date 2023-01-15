@@ -1,4 +1,4 @@
-package Transport;
+package Transport.CIvilVehicles;
 
 public class PassengerCar extends CivilVehicles implements PassengerCarable {
 

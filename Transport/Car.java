@@ -1,4 +1,4 @@
-package Transport;
+package Transport.CIvilVehicles;
 
 public abstract class CivilVehicles {
     private String name;
