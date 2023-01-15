@@ -1,15 +1,17 @@
-package Transport.CIvilVehicles;
+package Transport;
 
-public abstract class CivilVehicles {
+public abstract class Car {
     private String name;
     private String type;
+    private String color;
     private double speed;
     private boolean isSuv;
     private boolean isPassengerCar;
 
-    public CivilVehicles(String name, String type, double speed, boolean isSuv, boolean isPassengerCar) {
+    public Car(String name, String type, String color, double speed, boolean isSuv, boolean isPassengerCar) {
         this.name = name;
         this.type = type;
+        this.color = color;
         this.speed = speed;
         this.isSuv = isSuv;
         this.isPassengerCar = isPassengerCar;
@@ -27,6 +29,13 @@ public abstract class CivilVehicles {
     }
     public String getType() {
         return type;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+    public String getColor() {
+        return color;
     }
 
     public void setSpeed(double speed) {

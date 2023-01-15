@@ -1,9 +1,11 @@
 package Transport.CIvilVehicles;
 
-public class PassengerCar extends CivilVehicles implements PassengerCarable {
+import Transport.Car;
 
-    public PassengerCar(String name, String type, double speed, boolean isSuv, boolean isPassengerCar) {
-        super(name, type, speed, isSuv, isPassengerCar);
+public class PassengerCar extends Car implements PassengerCarable {
+
+    public PassengerCar(String name, String type, String color, double speed, boolean isSuv, boolean isPassengerCar) {
+        super(name, type, color, speed, isSuv, isPassengerCar);
     }
 
     @Override
@@ -18,7 +20,7 @@ public class PassengerCar extends CivilVehicles implements PassengerCarable {
 
     @Override
     public void callPassengerCar() {
-        System.out.println("This is passenger car by " + getName());
+        System.out.println("This is " + getType() + " car by " + getName());
     }
 
     @Override

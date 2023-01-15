@@ -1,12 +1,11 @@
 package Transport.CIvilVehicles;
 
-import Transport.CIvilVehicles.CivilVehicles;
-import Transport.CIvilVehicles.Suvable;
+import Transport.Car;
 
-public class SuvCar extends CivilVehicles implements Suvable {
+public class SuvCar extends Car implements Suvable {
 
-    public SuvCar(String name, String type, double speed, boolean isSuv, boolean isPassengerCar) {
-        super(name, type, speed, isSuv, isPassengerCar);
+    public SuvCar(String name, String type, String color, double speed, boolean isSuv, boolean isPassengerCar) {
+        super(name, type, color, speed, isSuv, isPassengerCar);
     }
 
     @Override
@@ -27,7 +26,7 @@ public class SuvCar extends CivilVehicles implements Suvable {
 
     @Override
     public void callSuv() {
-        System.out.println("This is SUV by " + getName());
+        System.out.println("This is" + getType() + " by " + getName());
     }
 
     @Override

@@ -1,8 +1,8 @@
 package Transport.PublicTransport;
 
-public interface PublicTransport {
+public interface PublicTransportInterface {
 
     public void showInfo();
 
-    public void drivingTime();
+    public String drivingTime(String time);
 }
