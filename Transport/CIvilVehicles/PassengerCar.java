@@ -8,6 +8,11 @@ public class PassengerCar extends Car implements PassengerCarable {
         super(name, type, color, speed, isSuv, isPassengerCar);
     }
 
+    {
+        setPassengerCar(true);
+        setSuv(false);
+    }
+
     @Override
     public void gas() {
         System.out.println(getName() + " газует");

@@ -40,7 +40,7 @@ public class Tram extends Car implements PublicTransportInterface {
     @Override
     public void showInfo() {
         System.out.println("Номер трамвая: " + getTramNumber() + '\'' +
-                "Электрический трамвай: " + isElectricTram());
+                "Электрический трамвай: " + (isElectricTram ? "Да" : "Нет"));
     }
 
     @Override

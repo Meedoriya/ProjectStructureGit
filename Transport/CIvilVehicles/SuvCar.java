@@ -8,6 +8,11 @@ public class SuvCar extends Car implements Suvable {
         super(name, type, color, speed, isSuv, isPassengerCar);
     }
 
+    {
+        setSuv(true);
+        setPassengerCar(false);
+    }
+
     @Override
     public void gas() {
         System.out.println(getName() + " газует");

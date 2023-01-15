@@ -40,7 +40,7 @@ public class Bus extends Car implements PublicTransportInterface {
     @Override
     public void showInfo() {
         System.out.println("Номер автобуса: " + getBusNumber() + '\'' +
-                "Это школьный автобус: " + isSchoolBus());
+                "Это школьный автобус: " + (isSchoolBus ? "Да" : "Нет"));
     }
 
     @Override
